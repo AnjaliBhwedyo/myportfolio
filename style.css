@@ -5,9 +5,26 @@
 }
 body{
 	font-family: 'Poppins', sans-serif;
-	background: url('image/background1.jpg') repeat;
-	color: white;
 
+}
+#welcome{
+width: 80px;
+  height: 50px;
+  background-color: lightblue;
+  position: relative;
+  top: 30px;
+  animation-name: example;
+  animation-duration: 4s;
+  font-family: 'Arial', sans-serif;
+  margin-left: 100px;
+  border-radius: 0px 20px;
+  box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
+   animation-iteration-count: 5;
+
+}
+@keyframes example {
+  75%  {background-color:pink; left:0px; top:200px;}
+  100% {background-color:aqua; left:0px; top:30px;}
 }
 
 .navbar{
@@ -20,10 +37,8 @@ nav{
 	text-align: right;
 }
 nav ul{
-	display: inline-block;
-	
+	display: inline-block;	
 	list-style-type: none;
-
 }
 nav ul li{
 	display: inline-block;
@@ -31,66 +46,117 @@ nav ul li{
 	
 }
 nav ul li a{
-	color: white;
+	color: #000000;
 }
-li{
-	color: white;
-}
-#logo{
 
-	height: 150px;
-	float: left;
-	margin-left: -10;
+/*#logo{
+
+	height: 120px;
+	
+	border-radius: 60%;
+	position: relative;
+	left: -100px;
 	width: 15%;
 
+}*/
+.container{
+	border: 2px  solid black;
 }
-#banner{
-	height: 150px;
-	float: left;
-	margin-left: -10;
-	width: 60%;
-	padding-left: 30px;
+#logo { 
+  width: auto;
+  height:100px;
+  position: relative;
+  left: 860px;
+  top: 70px;
+  box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50%;
+  text-align:center;
+}
 
-}
+
+
 #Home img {
 	border-radius: 50%;
 	height: 300px;
 	margin-left: 100px;
 }
 #Intro{
-	position:absolute;
+	position:relative;
 	top: 200px;
 	margin-left: 400px;
 	font-size: 30px;
-	font-weight: bolder;
-
+	animation-name: example;
 
 }
+
 #about{
-	margin-left: 300px;
+	margin-left: 200px;
 	position: relative;
 	font-size: 30px;
-	font-weight: bolder;
 	padding: 100px;
 }
+
 #about p{
 	font-size: 20px;
 }
-#Belief{
-	margin-left: 500px;
-	position: relative;
-	font-size: 30px;
-	font-weight: bold;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  
 }
 
-#Belief ul{
-	text-decoration-style: circle;
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #ccc;
+  color: black;
+  padding:50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.flip-card-back {
+  background-color:#ccc;
+  padding: 30px;
+  color: black;
+  font-weight: bold;
+  transform: rotateY(180deg);
+}
+
+#academic{
+	position: relative; 
+	left: 400px;
+}
+
 .footer{
 	background: #000;
 	color:#8a8a8a;
 	font-size: 14px;
 	padding: 60px;
+	position: relative;
+	top : 20px;
 	
 }
 
